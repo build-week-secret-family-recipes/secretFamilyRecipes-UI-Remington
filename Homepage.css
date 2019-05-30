@@ -51,3 +51,21 @@ table {
 /* font-family: ‘Mitr’, sans-serif;
 font-family: ‘Nunito’, sans-serif;
 font-family: ‘Cherry Swash’, cursive; Dark blue #1f1f44; Red #a00000; Grey #6d748c; Cream #e3e3e3*/
+
+.headerBar {
+    display:flex;
+    justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #1f1f44;
+	
+	width: 100%;
+	font-family: "Cherry Swash", cursive;
+}
+.headerBar h1 a{
+	color:#a00000;
+	font-size: 3rem;
+}
+.navBar a{
+	color:#a00000;
+}
