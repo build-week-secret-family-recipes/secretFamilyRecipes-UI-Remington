@@ -81,4 +81,18 @@ font-family: ‘Cherry Swash’, cursive; Dark blue #1f1f44; Red #a00000; Grey #
 .navBar a{
 	color:#a00000;
 	margin:0 1rem;
+	font-size: 1.2rem
+}
+.content {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #6d748c;
+	color: #e3e3e3;
+}
+.content p{
+	padding: 1rem;
+}
+.content img{
+	height: 20rem
 }
