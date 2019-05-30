@@ -72,7 +72,7 @@ font-family: ‘Cherry Swash’, cursive; Dark blue #1f1f44; Red #a00000; Grey #
 	bottom:10rem;
 }
 .navBar{
-	width:40rem;
+	width:30rem;
 	position: absolute;
 	display: flex;
 	justify-content: center;
