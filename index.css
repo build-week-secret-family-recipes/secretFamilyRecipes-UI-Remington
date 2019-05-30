@@ -134,5 +134,32 @@ p{
 	align-items: center;
 	width: 75%;
 	
-	color: #a00000
+	color: #a00000;
+}
+.cprt{
+	font-size: .8rem;
+}
+.aboutUs img{
+	height: 12rem;
+}
+.cameron, .marious, .pat, .rebecca, .rem, .yuka{
+	display: flex;
+}
+.marious, .rebecca, .yuka{
+	flex-direction: row-reverse;
+	
+	background-color: #1f1f44;
+	color: #e3e3e3;
+}
+.cameron, .pat, .rem{
+	background-color: #6d748c;
+	color: #a00000;
+}
+
+.camText{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-size: 1rem;
 }
