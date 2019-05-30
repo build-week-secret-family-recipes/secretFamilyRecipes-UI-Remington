@@ -87,12 +87,79 @@ font-family: ‘Cherry Swash’, cursive; Dark blue #1f1f44; Red #a00000; Grey #
 	display:flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #6d748c;
+	background-color: #a00000;
 	color: #e3e3e3;
 }
-.content p{
-	padding: 1rem;
-}
 .content img{
-	height: 20rem
+	height: 16.65rem;
+}
+.recipes{
+	display: flex;
+	flex-direction: row-reverse;
+	background-color: #6d748c;
+	color: #1f1f44;
+}
+.recipesBox{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+h2{
+	padding: 1rem;
+	font-size: 1.2rem;
+	font-family: "Mitr", sans-serif; 
+}
+p{
+	padding: 1rem;
+	font-family:"Nunito", sans-serif;
+	font-size: 1rem;
+}
+.burger{
+	width: 26rem;
+	
+}
+.contact{
+	display: flex;
+	flex-direction: row-reverse;
+	background-color: #e3e3e3;
+	font-weight: bold
+}
+.contact img{
+	height: 20rem;
+}
+.contactBox{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 75%;
+	
+	color: #a00000;
+}
+.cprt{
+	font-size: .8rem;
+}
+.aboutUs img{
+	height: 12rem;
+}
+.cameron, .marious, .pat, .rebecca, .rem, .yuka{
+	display: flex;
+}
+.marious, .rebecca, .yuka{
+	flex-direction: row-reverse;
+	
+	background-color: #1f1f44;
+	color: #e3e3e3;
+}
+.cameron, .pat, .rem{
+	background-color: #6d748c;
+	color: #a00000;
+}
+
+.camText{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-size: 1rem;
 }
