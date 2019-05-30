@@ -30,7 +30,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-    box-sizing: border-box;
+	box-sizing: border-box;
+	
 }
 ol, ul {
 	list-style: none;
@@ -51,3 +52,33 @@ table {
 /* font-family: ‘Mitr’, sans-serif;
 font-family: ‘Nunito’, sans-serif;
 font-family: ‘Cherry Swash’, cursive; Dark blue #1f1f44; Red #a00000; Grey #6d748c; Cream #e3e3e3*/
+
+.headerBar {
+    display:flex;
+    justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #1f1f44;
+	width: 100%;
+	font-family: "Cherry Swash", cursive;
+}
+.applePieBackground{
+	position: relative;
+}
+.headerBar .applePieBackground a h1{
+	color:#a00000;
+	font-size: 3rem;
+	position: absolute;
+	bottom:10rem;
+}
+.navBar{
+	width:40rem;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	top:12rem
+}
+.navBar a{
+	color:#a00000;
+	margin:0 1rem;
+}
