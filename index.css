@@ -3,19 +3,87 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -23,28 +91,47 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
-    line-height: 1;
+	line-height: 1;
 	box-sizing: border-box;
 	max-width: 1200px;
 	margin: 0 auto;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -55,167 +142,168 @@ font-family: ‘Nunito’, sans-serif;
 font-family: ‘Cherry Swash’, cursive; Dark blue #1f1f44; Red #a00000; Grey #6d748c; Cream #e3e3e3*/
 
 .headerBar {
-    display:flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	background-color: #1f1f44;
 	width: 100%;
 	font-family: "Cherry Swash", cursive;
-	
 }
-.applePieBackground{
+.applePieBackground {
 	position: relative;
 }
-.headerBar .applePieBackground h1{
-	color:#a00000;
+.headerBar .applePieBackground h1 {
+	color: #a00000;
 	font-size: 3rem;
 	position: absolute;
-	bottom:10rem;
+	bottom: 10rem;
 }
-@media(max-width:500px){
-	.applePieBackground{
+@media(max-width:500px) {
+	.applePieBackground {
 		display: flex;
 		justify-content: center;
-		align-content: center; 
+		align-content: center;
 	}
-	h1{
+	h1 {
 		flex-wrap: wrap;
 		width: 15rem;
 		bottom: 0;
 		text-align: center;
 		top: 4.5rem;
 	}
-	
-	
 }
-
-
-.navBar{
-	width:30rem;
+.navBar {
+	width: 30rem;
 	position: absolute;
 	display: flex;
 	justify-content: center;
-	top:12rem;
-	
+	top: 12rem;
 }
-@media(max-width:500px){
-	.navBar{
-		flex-direction:column;
+@media(max-width:500px) {
+	.navBar {
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		top: 14rem;
-		
-		height:4.5rem;
+		height: 4.5rem;
 		justify-content: space-between;
 	}
 }
-.navBar a{
-	color:#a00000;
-	margin:0 1rem;
+.navBar a {
+	color: #a00000;
+	margin: 0 1rem;
 	font-size: 1.2rem;
 }
 .content {
-	display:flex;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-color: #a00000;
 	color: #a00000;
-	
 }
-@media(max-width:500px){
-	.content{
+@media(max-width:500px) {
+	.content {
 		flex-direction: column;
 	}
 }
-.content img{
-	width: 50rem;
+.content img {
+	width: 100%;
 }
-@media(max-width:500px){
-	.content img{
+@media(max-width:500px) {
+	.content img {
 		width: 33%;
 	}
 }
-.recipes{
+.recipes {
 	display: flex;
 	flex-direction: row-reverse;
 	background-color: #6d748c;
 	color: #6d748c;
 }
-.recipesBox{
+.recipesBox {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
-h2{
+h2 {
 	padding: 1rem;
 	font-size: 1.2rem;
-	font-family: "Mitr", sans-serif; 
+	font-family: "Mitr", sans-serif;
 }
-p{
+p {
 	padding: 1rem;
-	font-family:"Nunito", sans-serif;
+	font-family: "Nunito", sans-serif;
 	font-size: 1rem;
 }
-.burger{
+.burger {
 	width: 50%;
 }
-@media(max-width:500px){
-	.burger{
-		display:none;
+@media(max-width:500px) {
+	.burger {
+		display: none;
 	}
-	.contact{
+	.contact {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-wrap: wrap;
 	}
 }
-.contact{
+.contact {
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: center;
 	align-items: center;
 	background-color: #e3e3e3;
 	font-weight: bold;
-	
 }
-.contact img{
-	height: 20rem;
-	width: 16rem;
-	
+
+.contact img {
+	width: 25%;
 }
-.contactBox{
+
+.contactBox {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	width: 75%;
-	
 	color: #e3e3e3;
 }
-.cprt{
+
+.cprt {
 	font-size: .8rem;
 }
-.aboutUs img{
+
+.aboutUs img {
 	height: 12rem;
 }
-.cameron, .marious, .pat, .rebecca, .rem, .yuka{
+
+.cameron,
+.marious,
+.pat,
+.rebecca,
+.rem,
+.yuka {
 	display: flex;
 }
-.marious, .rebecca, .yuka{
+
+.marious,
+.rebecca,
+.yuka {
 	flex-direction: row-reverse;
-	
 	background-color: #1f1f44;
 	color: #e3e3e3;
 }
-.cameron, .pat, .rem{
+.cameron,
+.pat,
+.rem {
 	background-color: #e3e3e3;
 	color: #a00000;
 	font-weight: bold;
 }
-
-.camText{
+.camText {
 	display: flex;
 	justify-content: center;
 	align-items: center;
