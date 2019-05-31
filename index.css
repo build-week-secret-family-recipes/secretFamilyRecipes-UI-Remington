@@ -108,10 +108,6 @@ font-family: ‘Cherry Swash’, cursive; Dark blue #1f1f44; Red #a00000; Grey #
 		height:4.5rem;
 		justify-content: space-between;
 	}
-	.navBar a{
-	
-		
-	}
 }
 .navBar a{
 	color:#a00000;
@@ -124,15 +120,26 @@ font-family: ‘Cherry Swash’, cursive; Dark blue #1f1f44; Red #a00000; Grey #
 	align-items: center;
 	background-color: #a00000;
 	color: #a00000;
+	
+}
+@media(max-width:500px){
+	.content{
+		flex-direction: column;
+	}
 }
 .content img{
-	height: 16.65rem;
+	width: 50rem;
+}
+@media(max-width:500px){
+	.content img{
+		width: 33%;
+	}
 }
 .recipes{
 	display: flex;
 	flex-direction: row-reverse;
 	background-color: #6d748c;
-	color: #1f1f44;
+	color: #6d748c;
 }
 .recipesBox{
 	display: flex;
@@ -150,17 +157,32 @@ p{
 	font-size: 1rem;
 }
 .burger{
-	width: 26rem;
-	
+	width: 50%;
+}
+@media(max-width:500px){
+	.burger{
+		display:none;
+	}
+	.contact{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
 }
 .contact{
 	display: flex;
 	flex-direction: row-reverse;
+	justify-content: center;
+	align-items: center;
 	background-color: #e3e3e3;
 	font-weight: bold;
+	
 }
 .contact img{
 	height: 20rem;
+	width: 12.5rem;
+	
 }
 .contactBox{
 	display: flex;
@@ -169,7 +191,7 @@ p{
 	align-items: center;
 	width: 75%;
 	
-	color: #a00000;
+	color: #e3e3e3;
 }
 .cprt{
 	font-size: .8rem;
@@ -187,8 +209,9 @@ p{
 	color: #e3e3e3;
 }
 .cameron, .pat, .rem{
-	background-color: #6d748c;
+	background-color: #e3e3e3;
 	color: #a00000;
+	font-weight: bold;
 }
 
 .camText{
