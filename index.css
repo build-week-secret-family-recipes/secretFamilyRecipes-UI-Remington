@@ -30,8 +30,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-	box-sizing: border-box;
-	
+	/* box-sizing: border-box; */
+	max-width: 1200px;
 }
 ol, ul {
 	list-style: none;
@@ -61,34 +61,69 @@ font-family: ‘Cherry Swash’, cursive; Dark blue #1f1f44; Red #a00000; Grey #
 	background-color: #1f1f44;
 	width: 100%;
 	font-family: "Cherry Swash", cursive;
+	
 }
 .applePieBackground{
 	position: relative;
 }
-.headerBar .applePieBackground a h1{
+.headerBar .applePieBackground h1{
 	color:#a00000;
 	font-size: 3rem;
 	position: absolute;
 	bottom:10rem;
 }
+@media(max-width:500px){
+	.applePieBackground{
+		display: flex;
+		justify-content: center;
+		align-content: center; 
+	}
+	h1{
+		flex-wrap: wrap;
+		width: 15rem;
+		bottom: 0;
+		text-align: center;
+		top: 4.5rem;
+	}
+	
+	
+}
+
+
 .navBar{
 	width:30rem;
 	position: absolute;
 	display: flex;
 	justify-content: center;
-	top:12rem
+	top:12rem;
+	
+}
+@media(max-width:500px){
+	.navBar{
+		flex-direction:column;
+		justify-content: center;
+		align-items: center;
+		top: 14rem;
+		
+		height:4.5rem;
+		justify-content: space-between;
+	}
+	.navBar a{
+	
+		
+	}
 }
 .navBar a{
 	color:#a00000;
 	margin:0 1rem;
-	font-size: 1.2rem
+	font-size: 1.2rem;
 }
 .content {
 	display:flex;
 	justify-content: center;
 	align-items: center;
 	background-color: #a00000;
-	color: #e3e3e3;
+	color: #a00000;
 }
 .content img{
 	height: 16.65rem;
@@ -122,7 +157,7 @@ p{
 	display: flex;
 	flex-direction: row-reverse;
 	background-color: #e3e3e3;
-	font-weight: bold
+	font-weight: bold;
 }
 .contact img{
 	height: 20rem;
